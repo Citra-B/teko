@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 import Fetcher from '@teko/helpers/fetcher';
@@ -30,7 +29,7 @@ export default function NewTeman({ id, role }) {
       });
       return;
     }
-    const kategori = tags.map((tag) => ({ nama: tag }));
+    const kategori = [];
     const data = {
       nama: namaRef.current.value,
       deskripsi: deskripsiRef.current.value,
