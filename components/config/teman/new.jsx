@@ -8,8 +8,6 @@ import { Button } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import upgradeUser from '@teko/helpers/utils/upgradeUser';
 
-import TagsInput from 'react-tagsinput';
-
 const temanFetcher = new Fetcher('teman');
 
 export default function NewTeman({ id, role }) {
@@ -21,10 +19,6 @@ export default function NewTeman({ id, role }) {
   const teleponRef = useRef();
   const alamatRef = useRef();
   const [tags, setTags] = useState([]);
-
-  const handleChange = (tag) => {
-    setTags(tag);
-  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
