@@ -18,7 +18,6 @@ export default function NewTeman({ id, role }) {
   const ringkasanRef = useRef();
   const teleponRef = useRef();
   const alamatRef = useRef();
-  const [tags, setTags] = useState([]);
 
   const onSubmit = async (e) => {
     e.preventDefault();
