@@ -141,7 +141,6 @@ export default function TampilTeman({ params }) {
           className="rounded-3 center mx-auto object-cover object-center"
           width={250}
           height={250}
-          src={data.logo}
           alt={data.nama}
           onClick={() => router.refresh()}
         />

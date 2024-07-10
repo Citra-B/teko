@@ -138,7 +138,6 @@ export default function EditKegiatan({ params }) {
           className="rounded-3 center mx-auto aspect-video object-cover object-center"
           width={300}
           height={150}
-          src={data.banner}
           alt={data.nama}
           onClick={() => router.refresh()}
         />

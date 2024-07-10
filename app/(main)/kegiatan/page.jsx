@@ -65,7 +65,6 @@ function ListKegiatans({ data }) {
                   variant="top"
                   width={854}
                   height={480}
-                  src={kegiatan.banner}
                   alt={`banner ${kegiatan.nama}`}
                   className="aspect-video object-cover object-center pointer-events-none"
                 />

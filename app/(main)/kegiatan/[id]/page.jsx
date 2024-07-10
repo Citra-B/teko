@@ -45,7 +45,6 @@ function KegiatanDetail({ id }) {
           width={854}
           height={480}
           className="aspect-video mb-3 object-cover object-center"
-          src={data.banner}
           alt="gambar hero"
         />
       </Container>
@@ -56,7 +55,7 @@ function KegiatanDetail({ id }) {
       </Container>
 
       <h3 className="flex justify-center">Dibuat Oleh:</h3>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-5">
         <Link
           href={{
             pathname: `/teman/${data.lembaga.id}`,
@@ -67,7 +66,6 @@ function KegiatanDetail({ id }) {
             width={200}
             height={200}
             className="mr-3 rounded object-cover object-center"
-            src={data.lembaga.logo}
             alt="logo"
           />
           <h3 className="my-auto">{data.lembaga.nama}</h3>

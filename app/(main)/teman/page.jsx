@@ -54,7 +54,6 @@ function ListTemans({ data }) {
               <Card className="border-brand drop-shadow">
                 <TekoImage
                   variant="top"
-                  src={teman.logo}
                   width="200"
                   height="200"
                   alt={`logo ${teman.nama}`}

@@ -7,7 +7,7 @@ generator client {
 }
 
 datasource db {
-    provider = "mysql"
+    provider = "postgresql"
     url      = env("DATABASE_URL")
 }
 
@@ -107,7 +107,6 @@ model Lembaga {
     Donasi         Donasi[]
     SosialMedia    SosialMedia[]
 
-    @@fulltext([nama, deskripsi, ringkasan, alamat, logo])
     @@map("lembaga")
 }
 

@@ -42,8 +42,6 @@ function Team() {
         width={832}
         height={624}
         className="object-cover aspect-[3/4] object-center w-full h-full md:w-48 md:h-auto md:rounded-xl rounded-full mx-auto"
-        src={member.foto}
-        alt={`foto ${member.name}`}
       />
       <div className="pt-6 md:p-8 text-center md:text-left space-y-4 my-auto">
         <p className="text-lg lg:text-xl font-light">

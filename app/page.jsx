@@ -24,7 +24,14 @@ function Stats() {
     statsFetcher.fetcher,
     statsFetcher.swrConfig,
   );
-  if (error) return <div>Gagal untuk memuat</div>;
+  if (error) {
+    return (
+      <Skeleton
+        className="rounded-md z-30 bg-white w-28 mt-8 p-[3vmin] ml-6 shadow-lg sm:w-32 md:w-40 lg:w-52 xl:w-64 xxl:w-80 lg:p-[5vmin] xl:p-[6vmin]"
+        containerClassName="flex-grow: 1; flex-direction: row"
+        count={4}
+      />);
+  }
   if (!data) {
     return (
       <Skeleton
@@ -85,7 +92,6 @@ function Temans() {
         <Card className="border-brand drop-shadow">
           <TekoImage
             variant="top"
-            src={teman.logo}
             width="200"
             height="200"
             alt={`logo ${teman.nama}`}
@@ -119,9 +125,8 @@ export default function BerandaPage() {
       </header>
 
       <main>
-        <Container fluid className="p-0">
+        <Container fluid className="p-0 ">
           <div className="w-full h-[110vmin] relative xs:h-[80vmin] s:h-[60vmin]">
-            <div className="absolute w-full h-full"></div>
             <div className="w-full h-full bg-brand pt-[19vmin] text-center">
               <h1 className="mb-2 text-3xl text-white lg:text-4xl xxl:text-5xl">
                 Ada apa di Teko?

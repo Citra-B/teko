@@ -25,13 +25,12 @@ export default function Info() {
     <>
       <div className="m-auto ">
         <h3 className=" flex flex-col md:flex md:flex-row justify-center text-base md:text-lg font-bold text-brand">
-          {data.name} <span className="font-light">| {data.email} </span>
+          {data.name} <span className="font-light"> | {data.email} </span>
         </h3>
       </div>
 
       <TekoImage
         className="w-[45px] h-[45px] md:w-[70px] md:h-[70px] object-cover object-center rounded-full m-3"
-        src={data.picture}
         width={45}
         height={45}
         alt="foto profil"

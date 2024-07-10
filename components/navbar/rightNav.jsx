@@ -73,7 +73,6 @@ export default function RightNav() {
         <div className="flex mx-auto cursor-pointer border border-brand p-2 rounded">
           <TekoImage
             className="w-[45px] h-[45px] object-cover object-center rounded-full mr-3 pointer-events-none my-auto"
-            src={data.picture}
             width={45}
             height={45}
             alt="foto profil"

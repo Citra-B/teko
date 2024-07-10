@@ -119,8 +119,6 @@ export default function NewTeman({ id, role }) {
             name="last"
             ref={teleponRef}
           />
-          <label className="mb-2 font-semibold">Kategori:</label>
-          <TagsInput value={tags} onChange={() => handleChange()} />
           <Button
             type="submit"
             className="my-3 font-semibold text-lg bg-brand border-brand py-3"
